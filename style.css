@@ -1,3 +1,31 @@
-.main-background {
-    background-color: #0a0a0a;
+body {
+    background-color: var(--night);
+}
+
+.text-box-container {
+    margin: auto;
+    height: 30%;
+    width: 90%;
+    max-width: 960px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.text-box {
+    padding: 10px;  
+    position: relative;
+    color: var(--champagne-pink);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* CSS HEX */
+:root {
+    --night: #0a0a0aff;
+    --rose-red: #bb2649ff;
+    --champagne-pink: #e5d4ceff;
+    --tiffany-blue: #7fd1b9ff;
+    --myrtle-green: #38726cff;
 }
