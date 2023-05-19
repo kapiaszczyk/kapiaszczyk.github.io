@@ -2,14 +2,45 @@ body {
     background-color: var(--night);
 }
 
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .text-box-container {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .text-box-container {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text-box-container {
+    margin: auto;
+    width: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .text-box-container {
+    margin: auto;
+    width: 40%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 .text-box-container {
     margin: auto;
-    max-width: 1000px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 40%;
   }
+}
 
 .text-box {
     padding: 10px;  
@@ -28,6 +59,7 @@ body {
   font-weight: 300;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+
 }
 
 .text-box:hover, .text-box-inner:hover {
@@ -172,64 +204,6 @@ a.contact-link:not(:hover) .fa-github{
   100% {
       background-position: 100% 50%;
   }
-}
-
-/* SCROLL */
-
-html,body{
-  padding: 0;
-  margin: 0;
-}
-
-ul{
-  top: calc(100% / 2 - 60px);
-  position: fixed;
-  height: auto;
-  right: 10px;
-}
-
-li{
-  list-style-type: none;
-  width: 8px;
-  height: 8px;
-  background-color: var(--platinum);
-  border-radius: 4px;
-  margin: 20px 15px;
-  transition: 0.3s ease;
-}
-
-.active{
-  background-color: #6eabb4 ;
-}
-
-.section{
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#sec1{
-  background-color: var(--night); 
-}
-
-#sec2{
-  background-color: var(--night); 
-}
-
-#sec3{
-  background-color:  var(--night); 
-}
-
-#sec4{
-  background-color:  var(--night); 
 }
 
 /* CSS HEX */

@@ -8,110 +8,56 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lora&family=Open+Sans:wght@300&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lora&family=Open+Sans:wght@300&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-        <script>
-            $(document).ready(function() {
-            var delay = false;
-            var currentPage = 1;
-            var pageCount = $(".section").length;
-            var swipe = document.getElementsByTagName('.section');
-        
-            $(document).on('mousewheel DOMMouseScroll', function(event) {
-                event.preventDefault();
-                if (delay) return;
-                delay = true;
-                setTimeout(function() { delay = false }, 100)
-        
-                var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-                console.log(wd);
-        
-                if (wd < 0) {
-                    if (currentPage < pageCount) {
-                        currentPage++;
-                    }
-                } else {
-                    if (1 < currentPage) {
-                        currentPage--;
-                    }
-                }
-            
-                $('html,body').animate({
-                    scrollTop: $('#sec' + currentPage).offset().top
-                }, 700);
-        
-                $('#tag' + currentPage).addClass('active');
-                for (var i = 1; i <= pageCount; i++) {
-                    if (i != currentPage) {
-                        $('#tag' + i).removeClass('active');
-                    }
-                }
-            });
-        });  
-        </script>
     </head>
         <body>
-                <ul>
-                    <li id="tag1" class="active"></li>
-                    <li id="tag2"></li>
-                    <li id="tag3"></li>
-                    <li id="tag4"></li>
-                </ul>
-                <div class="section" id="sec1">
-                    <div class="text-box-non-animated">
-                        <h6>Hello!</h6>
-                        <div class="text-box-inner">
-                            <span class="special-text">My name is Karolina. </span>This is, or rather will be, my personal website. Frankly, I'm terrible at web design.
-                        </div>
+            <div class="text-box-container">
+                <div class="text-box-non-animated">
+                    <h6>Hello!</h6>
+                    <div class="text-box-inner">
+                        <span class="special-text">My name is Karolina. </span>This is, or rather will be, my personal website. Frankly, I'm terrible at web design.
                     </div>
                 </div>
-                <div class="section" id="sec2">
-                    <div class="text-box-non-animated">
-                        <h6>About me</h6>
-                        <div class="text-box-inner">
-                            I'm currently enrolled at the University of Silesia, studying computer science and software engineering. <span class="special-text">Software architecture is my main interest.</span> I also have a passion for game development and game design. 
-                            <br><br>  
-                            <span class="special-text">Right now I'm learning back-end development with Java and Spring and looking for internship opportunities.</span>
-                        </div>
+                <div class="text-box-non-animated">
+                    <h6>About me</h6>
+                    <div class="text-box-inner">
+                        I'm currently enrolled at the University of Silesia, studying computer science and software engineering. <span class="special-text">Software architecture is my main interest.</span> I also have a passion for game development and game design. 
+                        <br><br>  
+                        <span class="special-text">Right now I'm learning back-end development with Java and Spring and looking for internship opportunities.</span>
                     </div>
                 </div>
-                <div class="section" id="sec3">
-                    <div class="text-box-non-animated">
-                        <h6>
-                            Here are some of my projects
-                        </h6>
-                        <div class="project-card">
-                            <div class="project-title"><span class="special-text">WeatherApp</span></div>
-                            <div class="project-link"><a href="https://github.com/kapiaszczyk/WeatherApp">github.com/WeatherApp</a></div>
-                            <div class="project-description">Simple CLI app that returns weather info for set location.library-managment-app</div>
-                        </div>    
-                        <div class="project-card">
-                            <div class="project-title"><span class="special-text">library-managment-app</span></div>
-                            <div class="project-link">
-                            <a href="https://github.com/kapiaszczyk/library-managment-app">github.com/library-managment-app</a></div>
-                            <div class="project-description">
-                            Simple application for managing a library database.</div>
-                        </div>    
-                        <div class="project-card">
-                            <div class="project-title"><span class="special-text">projectsAPI-MongoDB</span></div>
-                            <div class="project-link"><a href="https://github.com/kapiaszczyk/projectsAPI-MongoDB">github.com/projectsAPI-MongoDB</a></div>
-                            <div class="project-description">
-                            RESTful API that retrieves data from a MongoDB database.</div>
-                        </div>    
+                <div class="text-box-non-animated ">
+                    <h6>
+                        Here are some of my projects
+                    </h6>
+                    <div class="project-card">
+                        <div class="project-title"><span class="special-text">WeatherApp</span></div>
+                        <div class="project-link"><a href="https://github.com/kapiaszczyk/WeatherApp">github.com/WeatherApp</a></div>
+                        <div class="project-description">Simple CLI app that returns weather info for set location.library-managment-app</div>
+                    </div>    
+                    <div class="project-card">
+                        <div class="project-title"><span class="special-text">library-managment-app</span></div>
+                        <div class="project-link">
+                        <a href="https://github.com/kapiaszczyk/library-managment-app">github.com/library-managment-app</a></div>
+                        <div class="project-description">
+                        Simple application for managing a library database.</div>
+                    </div>    
+                    <div class="project-card">
+                        <div class="project-title"><span class="special-text">projectsAPI-MongoDB</span></div>
+                        <div class="project-link"><a href="https://github.com/kapiaszczyk/projectsAPI-MongoDB">github.com/projectsAPI-MongoDB</a></div>
+                        <div class="project-description">
+                        RESTful API that retrieves data from a MongoDB database.</div>
+                    </div>    
+                </div>
+                <div class="text-box-non-animated ">
+                    <h6>You can find me on...</h6>
+                    <div class="Social-media">
+                        <a class="contact-link" href="https://github.com/kapiaszczyk/"><i class="fab fa-github"></i></a>
+                        <a class="contact-link" href="https://www.linkedin.com/in/karolina-piaszczyk/"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="section" id="sec4">
-                    <div class="text-box-non-animated">
-                        <h6>You can find me on</h6>
-                        <div class="text-box-inner">
-                            <div class="Social-media">
-                                <a class="contact-link" href="https://github.com/kapiaszczyk/"><i class="fab fa-github"></i></a>
-                                <a class="contact-link" href="https://www.linkedin.com/in/karolina-piaszczyk/"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            </div>
         </body>
 </html>
