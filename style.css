@@ -51,6 +51,46 @@ ul {
     text-decoration: none;
 }
 
+.contact-link {
+    color: #a8a8a8;
+    font-weight: normal;
+    font-family: 'MD Sans', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.Social-media{
+  display: flex;
+  justify-content: center;
+}
+a.contact-link{
+  display: flex;
+  height: 30px;
+  width: 30px;
+  margin: 0 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.5s
+}
+a.contact-link i{
+  font-size: 25px;
+  color: #777;
+  transition: transform 0.5s;
+}
+a.contact-link:hover{
+  transform: translateY(1px);
+}
+a.contact-link:hover i{
+  transform: scale(0.95);
+}
+a.contact-link:hover .fa-linkedin{
+  color: #0e76a8;
+}
+a.contact-link:hover .fa-github{
+  color: #6e5494;
+}
+
 table {
     border-collapse: collapse;
     font-size: .9em;
