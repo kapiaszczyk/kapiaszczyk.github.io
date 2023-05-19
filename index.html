@@ -8,59 +8,51 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lora&family=Open+Sans:wght@300&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
         <body>
             <div class="text-box-container">
-                <div class="text-box">
+                <div class="text-box-non-animated">
                     <h6>Hello!</h6>
-                    <p>
-                        This is, or rather will be, my personal website.
-                    </p>
+                    <div class="text-box-inner">
+                        <span class="special-text">My name is Karolina. </span>This is, or rather will be, my personal website. Frankly, I'm terrible at web design.
+                    </div>
+                </div>
+                <div class="text-box-non-animated">
                     <h6>About me</h6>
-                    <p>
-                        I'm currently enrolled at the University of Silesia, studying computer science and software engineering. Software architecture is my main interest. I also have a passion for game development and game design.
-                        
-                    </p>
-                    <p>
-                        Right now I'm learning back-end development with Java and Spring and looking for internship opportunities.  
-                    </p>
+                    <div class="text-box-inner">
+                        I'm currently enrolled at the University of Silesia, studying computer science and software engineering. <span class="special-text">Software architecture is my main interest.</span> I also have a passion for game development and game design. 
+                        <br><br>  
+                        <span class="special-text">Right now I'm learning back-end development with Java and Spring and looking for internship opportunities.</span>
+                    </div>
+                </div>
+                <div class="text-box-non-animated ">
                     <h6>
                         Here are some of my projects
                     </h6>
-                    <table>
-
-                        <thead>
-                          <tr>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td scope="row" data-label="Name">WeatherApp
-                                <br>
-                                <a class="project-link" href="https://github.com/kapiaszczyk/WeatherApp">github.com/WeatherApp</a>
-                            </td>
-                            <td data-label="Description">Simple CLI app that returns weather info for set location.</td>
-                          </tr>
-                          <tr>
-                            <td scope="row" data-label="Name">library-managment-app
-                                <br>
-                                <a class="project-link" href="https://github.com/kapiaszczyk/library-managment-app">github.com/library-managment-app</a>
-                            </td>
-                            <td data-label="Description">Simple application for managing a library database.</td>
-                          </tr>
-                          <tr>
-                            <td scope="row" data-label="Name">projectAPI
-                                <br>
-                                <a class="project-link" href="https://github.com/kapiaszczyk/projectsAPI-MongoDB">github.com/projectsAPI-MongoDB</a>
-                            </td>
-                            <td data-label="Description">RESTful API that retrieves data from a MongoDB database.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <h6>
-                        You can find me on...
-                    </h6>
+                    <div class="project-card">
+                        <div class="project-title"><span class="special-text">WeatherApp</span></div>
+                        <div class="project-link"><a href="https://github.com/kapiaszczyk/WeatherApp">github.com/WeatherApp</a></div>
+                        <div class="project-description">Simple CLI app that returns weather info for set location.library-managment-app</div>
+                    </div>    
+                    <div class="project-card">
+                        <div class="project-title"><span class="special-text">library-managment-app</span></div>
+                        <div class="project-link">
+                        <a href="https://github.com/kapiaszczyk/library-managment-app">github.com/library-managment-app</a></div>
+                        <div class="project-description">
+                        Simple application for managing a library database.</div>
+                    </div>    
+                    <div class="project-card">
+                        <div class="project-title"><span class="special-text">projectsAPI-MongoDB</span></div>
+                        <div class="project-link"><a href="https://github.com/kapiaszczyk/projectsAPI-MongoDB">github.com/projectsAPI-MongoDB</a></div>
+                        <div class="project-description">
+                        RESTful API that retrieves data from a MongoDB database.</div>
+                    </div>    
+                </div>
+                <div class="text-box-non-animated ">
+                    <h6>You can find me on...</h6>
                     <div class="Social-media">
                         <a class="contact-link" href="https://github.com/kapiaszczyk/"><i class="fab fa-github"></i></a>
                         <a class="contact-link" href="https://www.linkedin.com/in/karolina-piaszczyk/"><i class="fab fa-linkedin"></i></a>

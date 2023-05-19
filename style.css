@@ -5,7 +5,6 @@ body {
 .text-box-container {
     margin: auto;
     max-width: 1000px;
-    text-align: justify;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,16 +14,47 @@ body {
 .text-box {
     padding: 10px;  
     position: relative;
-    color: #a8a8a8;
-    font-family: 'MD Sans', sans-serif;
+    color: #cacaca;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1em;
 }
 
+.text-box-non-animated {
+  padding: 10px;  
+  position: relative;
+  color: #cacaca;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.text-box:hover, .text-box-inner:hover {
+    transform: scale(0.99);
+    transition: transform 300ms ease-in-out;
+}
+
+.text-box:not(:hover), .text-box-inner:not(:hover) {
+  transition: transform 300ms ease-in-out;
+} 
+
 h6 {
-    font-size: 30px;
-    color: #a8a8a8;
-    font-family: 'Lora', serif;
+    font-size: 1.25em;
+    color: var(--platinum);
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.25em;
+    font-weight: bold;
+    text-align: none;
+}
+
+.h6-left {
+  text-align: left;
+}
+
+.h6-right {
+  text-align: right;
 }
 
 p {
@@ -33,7 +63,7 @@ p {
 }
 
 a {
-    color: #a8a8a8;
+    color:var(--platinum);
     text-decoration: none;
 }
 
@@ -43,16 +73,18 @@ ul {
 }
 
 .project-link {
-    color: #a8a8a8;
+    color:var(--platinum);
     font-weight: normal;
     font-family: 'MD Sans', sans-serif;
     font-style: italic;
     font-size: .7em;
-    text-decoration: none;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 .contact-link {
-    color: #a8a8a8;
+    color: var(--platinum);
     font-weight: normal;
     font-family: 'MD Sans', sans-serif;
     font-style: italic;
@@ -75,97 +107,80 @@ a.contact-link{
 }
 a.contact-link i{
   font-size: 25px;
-  color: #777;
+  color: var(--platinum);
   transition: transform 0.5s;
-}
-a.contact-link:hover{
-  transform: translateY(1px);
-}
-a.contact-link:hover i{
-  transform: scale(0.95);
 }
 a.contact-link:hover .fa-linkedin{
   color: #0e76a8;
+  transition: color 300ms ease-in;
 }
 a.contact-link:hover .fa-github{
   color: #6e5494;
+  transition: color 300ms ease-in;
+}
+a.contact-link:not(:hover) .fa-linkedin{
+  color: #cacaca;
+  transition: color 500ms ease-in-out;
+}
+a.contact-link:not(:hover) .fa-github{
+  color: #cacaca;
+  transition: color 500ms ease-in-out;
 }
 
-table {
-    border-collapse: collapse;
-    font-size: .9em;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    table-layout: fixed;
-    font-family: 'MD Sans', sans-serif;
-    border-bottom: none;
-  }
+.project-card {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
 
-  table tr {
+.project-card:first-of-type {
+  margin-top: 0;
+}
 
-    padding: .35em;
-  }
-  
-  table th,
-  table td {
-    padding-bottom: .75em;
-    text-align: center;
-  }
+.project-card:last-of-type {
+  margin-bottom: 0;
+}
 
-  td[data-label="Name"] {
-    font-weight: bold;
-    font-family: 'Lora', serif;
-    text-align: left;
-  }
+.project-card:hover {
+  transform: translateX(10px);
+  transition: transform 300ms ease-in-out;
+}
 
-  td[data-label="Description"] {
-    text-align: left;
-  }
+.project-card:not(:hover) {
+  transition: transform 300ms ease-in-out;
+}
 
-  table tr:last-child {
-    border-bottom: 0;
-  }
-  
-  @media screen and (max-width: 600px) {
-    table {
-      border: 0;
-    }
-    
-    table thead {
-      border: none;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-    
-    table tr {
-      display: block;
-      margin-bottom: .625em;
+.special-text {
+  background: linear-gradient(
+    to right,
+    #6eabb4 20%,
+    #84c8c0 30%,
+    #0190cd 70%,
+    #8ba8bf 80%
+  );
+  font-weight: bold;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
 
-    }
-    
-    table td {
-      display: block;
-      font-size: .8em;
-      text-align: right;
-    }
-    
-    
-    table td:last-child {
-      border-bottom: 0;
-    }
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
   }
+  100% {
+      background-position: 100% 50%;
+  }
+}
 
 /* CSS HEX */
 :root {
     --night: #0a0a0aff;
+    --lighter-night: rgb(15, 14, 14);
     --rose-red: #bb2649ff;
     --champagne-pink: #e5d4ceff;
     --tiffany-blue: #7fd1b9ff;
-    --myrtle-green: #38726cff;
+    --platinum: #E2E2E2;
+    --space-cadet: #1B1F3B;
 }
