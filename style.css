@@ -120,9 +120,7 @@ a {
     color:var(--platinum);
     font-weight: normal;
     font-family: 'MD Sans', sans-serif;
-    font-style: italic;
-    font-size: .7em;
-    text-decoration: underline;
+    font-size: 1em;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
