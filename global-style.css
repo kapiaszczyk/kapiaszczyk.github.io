@@ -1,5 +1,6 @@
 body {
     background-color: var(--night);
+    margin: 0;
 }
 
 .text-box {
@@ -125,6 +126,7 @@ a.contact-link:not(:hover) .fa-github{
     to right,
     #6eabb4 20%,
     #84c8c0 30%,
+    #876faf 50%,
     #0190cd 70%,
     #8ba8bf 80%
   );
