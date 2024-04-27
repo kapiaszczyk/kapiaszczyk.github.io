@@ -11,8 +11,14 @@
 @media (min-width:800px) {
     .responsive-three-column-grid {
         display: grid;
-        grid-template-rows: 100vh;
+        grid-template-rows: 85vh;
         grid-template-columns: 5% 33% minmax(200px, 1fr) 5%;
+    }
+}
+
+@media (max-width:800px) {
+    .responsive-three-column-grid {
+        padding: 2rem
     }
 }
 
@@ -26,11 +32,13 @@ body {
  
     /* new small viewport height for modern browsers */
     min-height:100svh;
+
+    margin: 0;
  }
 
 #page-container {
     position: relative;
-    min-height: 100vh;
+    max-height: 95vh;
 }
   
   
@@ -38,6 +46,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    max-height: 5vh;
 }
 
 #about-me, #hello, #projects {
