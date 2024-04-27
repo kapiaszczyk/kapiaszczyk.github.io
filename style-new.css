@@ -12,7 +12,7 @@
     .responsive-three-column-grid {
         display: grid;
         grid-template-rows: 100vh;
-        grid-template-columns: 33% minmax(200px, 1fr);
+        grid-template-columns: 5% 33% minmax(200px, 1fr) 5%;
     }
 }
 
@@ -33,15 +33,11 @@ body {
     min-height: 100vh;
 }
   
-.responsive-three-column-grid {
-    padding-bottom: 2.5rem;    /* Footer height */
-}
   
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* Footer height */
 }
 
 #about-me, #hello, #projects {
