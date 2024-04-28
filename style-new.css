@@ -11,7 +11,7 @@
 @media (min-width:800px) {
     .responsive-three-column-grid {
         display: grid;
-        grid-template-rows: 85vh;
+        height: 100vh;
         grid-template-columns: 5% 33% minmax(200px, 1fr) 5%;
     }
 }
@@ -26,22 +26,16 @@ body {
     display:grid;
     grid-template-rows:auto 1fr auto;
     grid-template-columns:100%;
- 
+
     /* fallback height */
     min-height:100vh;
- 
+
     /* new small viewport height for modern browsers */
     min-height:100svh;
 
     margin: 0;
- }
-
-#page-container {
-    position: relative;
-    max-height: 95vh;
 }
-  
-  
+
 #footer {
     position: absolute;
     bottom: 0;
