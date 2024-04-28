@@ -1,0 +1,78 @@
+.repo-card {
+    border: 1px solid #cccccc59;
+    border-radius: 4px;
+    padding: 1rem;
+    position: relative;
+    max-width: 100%;
+    cursor: pointer;
+    transition: background-color 100ms ease-in 20ms;
+    overflow: hidden;
+    grid-template-columns: 10% 1fr;
+    display: grid;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.repo-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.avatar {
+    align-self: center;
+    justify-self: center;
+}
+
+.avatar-container {
+    display: flex;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.github-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.repo-info {
+    padding: 0 1rem;
+}
+
+.repo-name {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 0.25rem 0;
+}
+
+.repo-description {
+    font-size: 14px;
+    color: #999999;
+}
+
+@media (max-width:800px) {
+
+    .repo-card {
+        grid-template-columns: 10% 1fr;
+    }
+    
+}
+
+@media (min-width:800px) and (max-width: 1080px) {
+
+    .repo-card {
+        grid-template-columns: 15% 1fr;
+    }
+    
+}
+
+.dot {
+    margin-left: 3px; 
+    margin-right: 3px;
+}
